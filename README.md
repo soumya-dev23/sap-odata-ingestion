@@ -43,7 +43,11 @@ Data Cleanup: Automatically strips technical metadata columns like __metadata.
 
 Completion: Appends records to the CSV and outputs a final success message with the total row count.
 
-Code Overview
+##########Code Overview
 fetch_sap_generator(): A Python generator function handling session management, query parameters, error catching, retries, and yielding record batches on demand.
 
-pandas Integration: Converts raw JSON dictionaries into DataFrames batch-by-batch for smooth tabular handling and CSV persistence.
+##########pandas Integration:
+ Converts raw JSON dictionaries into DataFrames batch-by-batch for smooth tabular handling and CSV persistence.
+
+######## logging Module Configuration:
+Replaces standard print statements with professional log levels (INFO, WARNING, ERROR, CRITICAL), writing timestamps and messages directly to sap_extraction_audit.log with full exception tracebacks (exc_info=True
